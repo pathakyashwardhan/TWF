@@ -4,6 +4,5 @@ import { translations } from "./translation.controller.js";
 
 
 const router = Router();
-
-router.route("/tofrench").post(translations);
+router.route("/tofrench").get(translations).post(translations);
 export default router
